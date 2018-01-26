@@ -1,0 +1,206 @@
+/*Basic reset*/
+		* {margin: 0; padding: 0;}
+
+		body {
+			color: white;
+			background: #2A3046;
+			font-family: "Segoe UI", "Segoe UI Black", "Segoe UI Emoji", "Segoe UI Light";
+		}
+		.head{
+			margin: auto;
+			background-color: #1E282C;
+			padding: 0px;
+			display: block;
+		}
+		#accordian {
+			background: #2A3046;
+			width: 250px;
+			margin: -20px auto 0px 0px;
+			color: white;
+			/*Some cool shadow and glow effect*/
+			box-shadow: 
+				0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+				0 0 200px 1px rgba(255, 255, 255, 0.5);
+
+		}
+		/*heading styles*/
+		#accordian h3 {
+			font-size: 15px;
+			line-height: 40px;
+			padding: 0 10px;
+			cursor: pointer;
+			/*fallback for browsers not supporting gradients*/
+			background: #D33257; 
+			background: linear-gradient(#1E282C, #2A3046);
+		}
+		/*heading hover effect*/
+		#accordian h3:hover {
+			text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+		}
+		/*iconfont styles*/
+		#accordian h3 span {
+			font-size: 15px;
+			margin-right: 10px;
+		}
+		/*list items*/
+		#accordian li {
+			list-style-type: none;
+		}
+		/*links*/
+		#accordian ul ul li a {
+			color: white;
+			text-decoration: none;
+			font-size: 15px;
+			line-height: 27px;
+			display: block;
+			padding: 0 15px;
+			/*transition for smooth hover animation*/
+			transition: all 0.15s;
+			border-radius: 10px;
+		}
+		/*hover effect on links*/
+		#accordian ul ul li a:hover {
+			background: #D33257;
+			border-left: 5px solid lightgreen;
+		}
+		/*Lets hide the non active LIs by default*/
+		#accordian ul ul {
+			display: none;
+		}
+		#accordian li.active ul {
+			display: block;
+		}
+
+		/* form search*/
+		a {
+			color: #2A679F;
+		}
+		span{
+			color: white;
+		}
+		/*========*/
+
+		.form-wrapper {
+			background-color: #2A3046;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#2A3046), to(#1E282C));
+			background-image: -webkit-linear-gradient(top, #2A3046, #1E282C);
+			background-image: -moz-linear-gradient(top, #2A3046, #1E282C);
+			background-image: -ms-linear-gradient(top, #2A3046, #1E282C);
+			background-image: -o-linear-gradient(top, #2A3046, #1E282C);
+			background-image: linear-gradient(top, #2A3046, #1E282C);
+			border-color: #dedede #bababa #aaa #bababa;
+			border-style: solid;
+			border-width: 1px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+			-moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+			box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+			margin: 10px auto 10px -250px;
+			overflow: hidden;
+			padding: 5px;
+			width: 430px;
+			display: block;
+		}
+
+		.form-wrapper #search {
+			border: 1px solid #CCC;
+			-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+			-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+			box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		  color: #999;
+			float: left;
+			font: 15px "Segoe UI", "Segoe UI Black", "Segoe UI Emoji", "Segoe UI Light";
+			height: 30px;
+			padding: 5px;
+			width: 350px;
+			
+		}
+
+		.form-wrapper #search:focus {
+			border-color: #aaa;
+			-webkit-box-shadow: 0 1px 1px #bbb inset;
+			-moz-box-shadow: 0 1px 1px #bbb inset;
+			box-shadow: 0 1px 1px #bbb inset;
+			outline: 0;
+		}
+
+		.form-wrapper #search:-moz-placeholder,
+		.form-wrapper #search:-ms-input-placeholder,
+		.form-wrapper #search::-webkit-input-placeholder {
+			color: #999;
+			font-weight: normal;
+		}
+
+		.form-wrapper #submit {
+			background-color: #0483a0;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
+			background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+			background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+			background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+			background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
+			background-image: linear-gradient(top, #31b2c3, #0483a0);
+			border: 1px solid #00748f;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+			-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+			color: #fafafa;
+			cursor: pointer;
+			height: 30px;
+			float: right;
+			font: 15 "Segoe UI", "Segoe UI Black", "Segoe UI Emoji", "Segoe UI Light";
+			padding: 0;
+			text-transform: uppercase;
+			text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+			width: 50px;
+		}
+
+		.form-wrapper #submit:hover,
+		.form-wrapper #submit:focus {
+			background-color: #31b2c3;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#0483a0), to(#31b2c3));
+			background-image: -webkit-linear-gradient(top, #0483a0, #31b2c3);
+			background-image: -moz-linear-gradient(top, #0483a0, #31b2c3);
+			background-image: -ms-linear-gradient(top, #0483a0, #31b2c3);
+			background-image: -o-linear-gradient(top, #0483a0, #31b2c3);
+			background-image: linear-gradient(top, #0483a0, #31b2c3);
+		}
+
+		.form-wrapper #submit:active {
+			-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+			outline: 0;
+		}
+
+		.form-wrapper #submit::-moz-focus-inner {
+			border: 0;
+		}
+		/* end form search*/
+		.qldl{
+			color: #D33257;
+			margin-left: 20px;
+		}
+		.table{
+			border-color: white;
+			text-align: center;
+		}
+		.canhgiua{
+			text-align: center;
+			margin-left: -120px;
+		}
+		.form-control{
+			float: left;
+		}
+		.tbl_title{
+			background-color:#D33257;
+			color: white; 
+		}
+	
